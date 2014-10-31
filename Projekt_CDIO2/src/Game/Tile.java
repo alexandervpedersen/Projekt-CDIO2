@@ -12,10 +12,10 @@ public class Tile {
 		this.tilename = "0";
 	}
 	
-	public Tile(String new_tilemessage, int new_tilereward, String new_tilename) {
+	public Tile(String new_tilename, String new_tilemessage, int new_tilereward) {
+		this.tilename = new_tilename;
 		this.tilemessage = new_tilemessage;
 		this.tilereward = new_tilereward;
-		this.tilename = new_tilename;
 	}
 	
 	public String getTilemessage() {
