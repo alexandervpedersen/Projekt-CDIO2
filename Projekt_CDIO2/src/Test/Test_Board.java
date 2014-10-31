@@ -69,7 +69,6 @@ public class Test_Board {
 	
 	Board board = new Board(tile1, tile2, tile3, tile4, tile5, tile6, tile7, tile8, tile9, tile10, tile11);
 	
-	
-	
+	System.out.println(board.toString());
 	}
 }
