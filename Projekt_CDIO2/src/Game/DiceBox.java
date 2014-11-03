@@ -28,6 +28,10 @@ public class DiceBox {
 			box[dicenumber].setDiceside(new_diceside);
 		}
 		
+		public void rollDice(){
+			this.dice = (int) (Math.random()* diceside + 1);
+//			return dice;
+		
 		public int Roll(){
 			int sum = t1.rollDice()+t2.rollDice();
 			return sum;
