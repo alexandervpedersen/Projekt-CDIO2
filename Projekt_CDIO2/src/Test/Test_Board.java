@@ -56,19 +56,20 @@ public class Test_Board {
 	messagearray[10] = message11;
 	
 	Tile tile1 = new Tile(namearray[0], messagearray[0], 250);
-	Tile tile2 = new Tile(namearray[0], messagearray[1], -200);
-	Tile tile3 = new Tile (namearray[0], messagearray[2], -100);
-	Tile tile4 = new Tile(namearray[0], messagearray[3], -20);
-	Tile tile5 = new Tile(namearray[0], messagearray[4], 180);
-	Tile tile6 = new Tile(namearray[0], messagearray[5], 0);
-	Tile tile7 = new Tile(namearray[0], messagearray[6], -70);
-	Tile tile8 = new Tile(namearray[0], messagearray[7], -60);
-	Tile tile9 = new Tile(namearray[0], messagearray[8], -80);
-	Tile tile10 = new Tile(namearray[0], messagearray[9], -90);
-	Tile tile11 = new Tile(namearray[0], messagearray[10], 650);
+	Tile tile2 = new Tile(namearray[1], messagearray[1], -200);
+	Tile tile3 = new Tile (namearray[2], messagearray[2], -100);
+	Tile tile4 = new Tile(namearray[3], messagearray[3], -20);
+	Tile tile5 = new Tile(namearray[4], messagearray[4], 180);
+	Tile tile6 = new Tile(namearray[5], messagearray[5], 0);
+	Tile tile7 = new Tile(namearray[6], messagearray[6], -70);
+	Tile tile8 = new Tile(namearray[7], messagearray[7], -60);
+	Tile tile9 = new Tile(namearray[8], messagearray[8], -80);
+	Tile tile10 = new Tile(namearray[9], messagearray[9], -90);
+	Tile tile11 = new Tile(namearray[10], messagearray[10], 650);
 	
 	Board board = new Board(tile1, tile2, tile3, tile4, tile5, tile6, tile7, tile8, tile9, tile10, tile11);
 	
 	System.out.println(board.toString());
+	
 	}
 }
