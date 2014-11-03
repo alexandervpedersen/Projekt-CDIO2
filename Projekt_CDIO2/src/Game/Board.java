@@ -14,6 +14,19 @@ public class Board {
 	Tile tile11;	
 	Tile board[] = {tile1, tile2, tile3, tile4, tile5, tile6, tile7, tile8, tile9, tile10, tile11};
 	
+	public Board() {
+		this.tile1 = new Tile();
+		this.tile2 = new Tile();
+		this.tile3 = new Tile();
+		this.tile4 = new Tile();
+		this.tile5 = new Tile();
+		this.tile6 = new Tile();
+		this.tile7 = new Tile();
+		this.tile8 = new Tile();
+		this.tile9 = new Tile();
+		this.tile10 = new Tile();
+		this.tile11 = new Tile();
+	}
 	
 	public Board(Tile tile1, Tile tile2, Tile tile3, Tile tile4, Tile tile5, Tile tile6, Tile tile7, Tile tile8, Tile tile9, Tile tile10, Tile tile11) {
 		this.tile1 = tile1;
