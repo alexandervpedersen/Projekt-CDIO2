@@ -117,67 +117,67 @@ public class Game {
 				
 				int n = dicebox.getSum();
 				switch (n) {
-				case 3: 
+				case 2: 
 					player1.addBalance(board.getTilereward(1));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(3, board.getTilename(1));
 					GUI.showMessage(board.getTilemessage(1));
 					break;
-				case 4: 
+				case 3: 
 					player1.addBalance(board.getTilereward(2));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(4, board.getTilename(2));
 					GUI.showMessage(board.getTilemessage(2));
 					break;
-				case 5: 
+				case 4: 
 					player1.addBalance(board.getTilereward(3));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(5, board.getTilename(3));
 					GUI.showMessage(board.getTilemessage(3));
 					break;
-				case 6: 
+				case 5: 
 					player1.addBalance(board.getTilereward(4));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(6, board.getTilename(4));
 					GUI.showMessage(board.getTilemessage(4));
 					break;
-				case 7: 
+				case 6: 
 					player1.addBalance(board.getTilereward(5));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(7, board.getTilename(5));
 					GUI.showMessage(board.getTilemessage(5));
 					break;
-				case 8: 
+				case 7: 
 					player1.addBalance(board.getTilereward(6));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(8, board.getTilename(6));
 					GUI.showMessage(board.getTilemessage(6));
 					break;
-				case 9: 
+				case 8: 
 					player1.addBalance(board.getTilereward(7));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(9, board.getTilename(7));
 					GUI.showMessage(board.getTilemessage(7));
 					break;
-				case 10: 
+				case 9: 
 					player1.addBalance(board.getTilereward(8));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(10, board.getTilename(8));
 					GUI.showMessage(board.getTilemessage(8));
 					break;
-				case 11: 
+				case 10: 
 					player1.addBalance(board.getTilereward(9));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(11, board.getTilename(9));
 					GUI.showMessage(board.getTilemessage(9));
 					break;
-				case 12: 
+				case 11: 
 					player1.addBalance(board.getTilereward(10));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(12, board.getTilename(10));
 					GUI.showMessage(board.getTilemessage(10));
 					break;
-				case 13: 
+				case 12: 
 					player1.addBalance(board.getTilereward(11));
 					GUI.setBalance(player1.getName(), player1.getBalance());
 					GUI.setCar(13, board.getTilename(11));
