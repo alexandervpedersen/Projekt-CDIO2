@@ -26,7 +26,7 @@ public class Account {
 		if (balance < 0)
 			this.balance = add;
 		else
-			this.balance = this.balance + add;
+			this.balance = balance + add;
 	}
 	
 	public boolean CheckWin() {
