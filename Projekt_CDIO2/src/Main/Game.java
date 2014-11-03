@@ -12,7 +12,7 @@ public class Game {
 
 	public static void main(String[] args) {
 		
-		String namearray[] = new String[11];
+		// Creation of all Strings
 		String name1 = "Tower";
 		String name2 = "Crater";
 		String name3 = "Palace Gates";
@@ -25,6 +25,22 @@ public class Game {
 		String name10 = "The Pit";
 		String name11 = "Goldmine";
 		
+		String message1 = "You have climbed up the tower and found a large chest filled with 250 gold coins!";
+		String message2 = "You have fallen down a crater and dropped 200 gold coins!";
+		String message3 = "You have reached the palace gates, you have to pay 100 gold coins!";
+		String message4 = "You reached the cold desert and paid 20 gold coins for a jacket!";
+		String message5 = "You have reached the walled city and recieved 180 gold coins for your courage!";
+		String message6 = "You reached the monastery and found inner peace.";
+		String message7 = "You spent a night in the black cave and woke up missing 70 gold coins!";
+		String message8 = "You have been kidnapped by Jabba The Hut!" + "\n" + "You must pay 60 gold coins to be released from the mountains.";
+		String message9 = "You have reached the werewolf wall, you paid 80 gold coins for a safe passage and an extra turn!";
+		String message10 = "You were taken captive by an old wizard! Give him 80 gold coins or he will swing his stick in the pit!";
+		String message11 = "You accidently fell down a mine shaft which turned out to be a gold mine! You mined gold for 650 gold coins.";
+		
+		String message_insertplayer1 = "Insert name of player 1";
+		String message_insertplayer2 = "Insert name of player 2";
+		
+		String namearray[] = new String[11];
 		namearray[0] = name1;
 		namearray[1] = name2;
 		namearray[2] = name3;
@@ -38,18 +54,6 @@ public class Game {
 		namearray[10] = name11;
 		
 		String messagearray[] = new String[11];
-		String message1 = "You have climbed up the tower and found a large chest filled with 250 gold coins!";
-		String message2 = "You have fallen down a crater and dropped 200 gold coins!";
-		String message3 = "You have reached the palace gates, you have to pay 100 gold coins!";
-		String message4 = "You reached the cold desert and paid 20 gold coins for a jacket!";
-		String message5 = "You have reached the walled city and recieved 180 gold coins for your courage!";
-		String message6 = "You reached the monastery and found inner peace.";
-		String message7 = "You spent a night in the black cave and woke up missing 70 gold coins!";
-		String message8 = "You have been kidnapped by Jabba The Hut!" + "\n" + "You must pay 60 gold coins to be released from the mountains.";
-		String message9 = "You have reached the werewolf wall, you paid 80 gold coins for a safe passage and an extra turn!";
-		String message10 = "You were taken captive by an old wizard! Give him 80 gold coins or he will swing his stick in the pit!";
-		String message11 = "You accidently fell down a mine shaft which turned out to be a gold mine! You mined gold for 650 gold coins.";
-		
 		messagearray[0] = message1;
 		messagearray[1] = message2;
 		messagearray[2] = message3;
@@ -62,6 +66,7 @@ public class Game {
 		messagearray[9] = message10;
 		messagearray[10] = message11;
 		
+		// Creation of all objects
 		Tile tile1 = new Tile(namearray[0], messagearray[0], 250);
 		Tile tile2 = new Tile(namearray[1], messagearray[1], -200);
 		Tile tile3 = new Tile (namearray[2], messagearray[2], -100);
@@ -76,19 +81,18 @@ public class Game {
 		
 		Board board = new Board(tile1, tile2, tile3, tile4, tile5, tile6, tile7, tile8, tile9, tile10, tile11);
 		
-		String player1_name = GUI.getUserString("Insert name of player 1");
-		String player2_name = GUI.getUserString("Insert name of player 2");
-		
 		Account account1 = new Account(1000);
 		Account account2 = new Account(1000);
 		
-		Player player1 = new Player(player1_name, account1);
-		Player player2 = new Player(player2_name, account2);
+		DiceBox dicebox = new DiceBox();
+		
+		Player player1 = new Player(GUI.getUserString(message_insertplayer1), account1);
+		Player player2 = new Player(GUI.getUserString(message_insertplayer2), account2);
+		
 		
 		GUI.addPlayer(player1.getName(), player1.getBalance());
 		GUI.addPlayer(player2.getName(), player2.getBalance());
 		
-		DiceBox dicebox = new DiceBox();
 		
 	}
 
