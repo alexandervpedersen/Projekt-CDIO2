@@ -4,6 +4,10 @@ public class Account {
 		
 	private int balance;
 	
+	public Account() {
+		this.balance = 0;
+	}
+	
 	public int getBalance() {
 		if (balance < 0)
 			balance = 0;
