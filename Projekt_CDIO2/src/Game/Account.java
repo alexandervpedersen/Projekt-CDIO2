@@ -29,6 +29,13 @@ public class Account {
 			this.balance = this.balance + add;
 	}
 	
+	public boolean CheckWin() {
+		if (balance >= 3000)
+			return true;
+		else
+			return false;
+	}
+	
 	public String toString() {
 		return ("current balance: " + getBalance());
 	}

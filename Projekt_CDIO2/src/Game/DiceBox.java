@@ -4,7 +4,6 @@ public class DiceBox {
 		
 		//Dice t1;
 		//Dice t2;
-		int sum;
 		int numberOfDice = 2;
 		Dice[] box  = new Dice[numberOfDice];
 		
@@ -31,11 +30,21 @@ public class DiceBox {
 		public void rollDice(){
 			box[0].rollDice();
 			box[1].rollDice();
-			
+		}
+		
+		public int getSum() {
+			return (box[0].getDice() + box[1].getDice());
 		}
 		
 		public void setDiceside(int dicenumber, int new_diceside){
 			box[dicenumber].setDiceside(new_diceside);
+		}
+		
+		public boolean CheckReroll() {
+			if (getSum() == 9)
+				return true;
+			else
+				return false;
 		}
 		
 //		public int Roll(){
