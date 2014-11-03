@@ -17,6 +17,7 @@ public class Board {
 		this.board[10] = new Tile();
 	}
 	
+	
 	public Board(Tile tile1, Tile tile2, Tile tile3, Tile tile4, Tile tile5, Tile tile6, Tile tile7, Tile tile8, Tile tile9, Tile tile10, Tile tile11) {
 		this.board[0] = tile1;
 		this.board[1] = tile2;
