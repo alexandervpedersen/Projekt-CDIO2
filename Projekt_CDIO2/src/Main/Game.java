@@ -6,6 +6,7 @@ import Game.Tile;
 public class Game {
 
 	public static void main(String[] args) {
+		
 		String namearray[] = new String[11];
 		String name1 = "Tower";
 		String name2 = "Crater";
@@ -31,23 +32,25 @@ public class Game {
 		namearray[9] = name10;
 		namearray[10] = name11;
 		
+		
 		String messagearray[] = new String[11];
-		String message1 = "bla1";
-		String message2 = "bla2";
-		String message3 = "bla3";
-		String message4 = "bla4";
-		String message5 = "bla5";
-		String message6 = "bla6";
-		String message7 = "bla7";
-		String message8 = "bla8";
-		String message9 = "bla9";
-		String message10 = "bla10";
-		String message11 = "bla11";
+		String message1 = "You have climbed up the tower and found a large chest filled with 250 gold coins!";
+		String message2 = "You have fallen down a crater and dropped 200 gold coins!";
+		String message3 = "You have reached the palace gates, you have to pay 100 gold coins!";
+		String message4 = "You reached the cold desert and paid 20 gold coins for a jacket!";
+		String message5 = "You have reached the walled city and recieved 180 gold coins for your courage!";
+		String message6 = "You reached the monastery and found inner peace.";
+		String message7 = "You spent a night in the black cave and woke up missing 70 gold coins!";
+		String message8 = "You have been kidnapped by Jabba The Hut!" + "\n" + "You must pay 60 gold coins to be released from the mountains.";
+		String message9 = "You have reached the werewolf wall, you paid 80 gold coins for a safe passage and an extra turn!";
+		String message10 = "You were taken captive by an old wizard! Give him 80 gold coins or he will swing his stick in the pit!";
+		String message11 = "You accidently fell down a mine shaft which turned out to be a gold mine! You mined gold for 650 gold coins.";
+		
 		
 		messagearray[0] = message1;
 		messagearray[1] = message2;
 		messagearray[2] = message3;
-		messagearray[3] = message4
+		messagearray[3] = message4;
 		messagearray[4] = message5;
 		messagearray[5] = message6;
 		messagearray[6] = message7;
