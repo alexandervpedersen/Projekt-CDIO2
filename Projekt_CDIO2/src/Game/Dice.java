@@ -4,7 +4,10 @@ public class Dice {
 
 		private int dice;
 		private int diceside = 6;
-
+		
+		public Dice() {
+			super();
+		}
 		public int getDice() {
 			return dice;
 		}
