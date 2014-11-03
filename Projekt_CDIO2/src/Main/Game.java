@@ -5,6 +5,7 @@ import Game.Tile;
 import Game.Dice;
 import Game.DiceBox;
 import Game.Player;
+import Game.Account;
 import boundaryToMatador.GUI;
 
 public class Game {
@@ -78,6 +79,16 @@ public class Game {
 		String player1_name = GUI.getUserString("Insert name of player 1");
 		String player2_name = GUI.getUserString("Insert name of player 2");
 		
+		Account account1 = new Account(1000);
+		Account account2 = new Account(1000);
+		
+		Player player1 = new Player(player1_name, account1);
+		Player player2 = new Player(player2_name, account2);
+		
+		GUI.addPlayer(player1.getName(), player1.getBalance());
+		GUI.addPlayer(player2.getName(), player2.getBalance());
+		
+		DiceBox dicebox = new DiceBox();
 		
 	}
 
