@@ -2,6 +2,10 @@ package Main;
 
 import Game.Board;
 import Game.Tile;
+import Game.Dice;
+import Game.DiceBox;
+import Game.Player;
+import boundaryToMatador.GUI;
 
 public class Game {
 
@@ -32,7 +36,6 @@ public class Game {
 		namearray[9] = name10;
 		namearray[10] = name11;
 		
-		
 		String messagearray[] = new String[11];
 		String message1 = "You have climbed up the tower and found a large chest filled with 250 gold coins!";
 		String message2 = "You have fallen down a crater and dropped 200 gold coins!";
@@ -45,7 +48,6 @@ public class Game {
 		String message9 = "You have reached the werewolf wall, you paid 80 gold coins for a safe passage and an extra turn!";
 		String message10 = "You were taken captive by an old wizard! Give him 80 gold coins or he will swing his stick in the pit!";
 		String message11 = "You accidently fell down a mine shaft which turned out to be a gold mine! You mined gold for 650 gold coins.";
-		
 		
 		messagearray[0] = message1;
 		messagearray[1] = message2;
@@ -72,6 +74,11 @@ public class Game {
 		Tile tile11 = new Tile(namearray[10], messagearray[10], 650);
 		
 		Board board = new Board(tile1, tile2, tile3, tile4, tile5, tile6, tile7, tile8, tile9, tile10, tile11);
+		
+		String player1_name = GUI.getUserString("Insert name of player 1");
+		String player2_name = GUI.getUserString("Insert name of player 2");
+		
+		
 	}
 
 }
