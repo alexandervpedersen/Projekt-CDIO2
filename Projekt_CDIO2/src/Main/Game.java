@@ -40,6 +40,11 @@ public class Game {
 		String message_insertplayer1 = "Insert name of player 1";
 		String message_insertplayer2 = "Insert name of player 2";
 		
+		String button_rolldice = "THROW";
+		String message_everyturn = "Press " + button_rolldice + " to roll the dice";
+		
+		
+		
 		String namearray[] = new String[11];
 		namearray[0] = name1;
 		namearray[1] = name2;
@@ -92,6 +97,26 @@ public class Game {
 		
 		GUI.addPlayer(player1.getName(), player1.getBalance());
 		GUI.addPlayer(player2.getName(), player2.getBalance());
+		
+		boolean winner = false;
+		boolean tur1 = false;
+		boolean tur2 = false;
+		
+		int start = (int) ((Math.random() * 2) + 1);
+		if (start == 1)
+			tur1 = true;
+		else
+			tur2 = true;
+	
+		while (winner != true) {
+			if (tur1 = true) {
+				GUI.getUserButtonPressed(message_everyturn, button_rolldice);
+				
+				
+			}
+			
+		}
+		
 		
 		
 	}
