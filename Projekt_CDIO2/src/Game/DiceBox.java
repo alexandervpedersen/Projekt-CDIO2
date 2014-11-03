@@ -4,7 +4,8 @@ public class DiceBox {
 
 		Dice t1;
 		Dice t2;
-		Dice box[] = {t1, t2};
+		int numberOfDice = 2;
+		Dice[] box  = new Dice[numberOfDice];
 		
 		public DiceBox(Dice t1, Dice t2){
 			this.t1 = t1; 
