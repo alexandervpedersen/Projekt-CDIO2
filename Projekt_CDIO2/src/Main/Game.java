@@ -11,6 +11,7 @@ import boundaryToMatador.GUI;
 public class Game {
 
 	public static void main(String[] args) {
+		GUI.create("fieldsfx.txt");
 		
 		// Creation of all Strings
 		String name1 = "Tower";
@@ -30,11 +31,11 @@ public class Game {
 		String message3 = "You have reached the palace gates, you have to pay 100 gold coins!";
 		String message4 = "You reached the cold desert and paid 20 gold coins for a jacket!";
 		String message5 = "You have reached the walled city and recieved 180 gold coins for your courage!";
-		String message6 = "You reached the monastery and found inner peace.";
+		String message6 = "You reached the monastery and found inner peace!";
 		String message7 = "You spent a night in the black cave and woke up missing 70 gold coins!";
 		String message8 = "You have been kidnapped by Jabba The Hut!" + "\n" + "You must pay 60 gold coins to be released from the mountains.";
 		String message9 = "You have reached the werewolf wall, you paid 80 gold coins for a safe passage and an extra turn!";
-		String message10 = "You were taken captive by an old wizard! Give him 80 gold coins or he will swing his stick in the pit!";
+		String message10 = "You were taken captive by an old wizard! Give him 90 gold coins or he will swing his stick in the pit!";
 		String message11 = "You accidently fell down a mine shaft which turned out to be a gold mine! You mined gold for 650 gold coins.";
 		
 		String message_insertplayer1 = "Insert name of player 1";
