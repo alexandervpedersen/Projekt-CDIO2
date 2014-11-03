@@ -5,12 +5,9 @@ public class DiceBox {
 		Dice t1;
 		Dice t2;
 		int sum;
-		Dice box[];
+		Dice box[] = {t1, t2};
 		
 		public DiceBox(Dice t1, Dice t2){
-			Dice box[] = new Dice[2];
-			box[0] = this.t1;
-			box[1] = this.t2;
 			this.t1 = t1; 
 			this.t2 = t2; 
 		}
