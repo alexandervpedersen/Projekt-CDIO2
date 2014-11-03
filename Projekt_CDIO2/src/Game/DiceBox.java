@@ -4,7 +4,6 @@ public class DiceBox {
 
 		Dice t1;
 		Dice t2;
-		int sum;
 		Dice box[] = {t1, t2};
 		
 		public DiceBox(Dice t1, Dice t2){
@@ -28,8 +27,8 @@ public class DiceBox {
 			box[dicenumber].setDiceside(new_diceside);
 		}
 		
-		public int getSum(){
-			sum = t1.rollDice()+t2.rollDice();
+		public int Roll(){
+			int sum = t1.rollDice()+t2.rollDice();
 			return sum;
 		}
 		
