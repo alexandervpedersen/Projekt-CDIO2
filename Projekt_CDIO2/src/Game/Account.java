@@ -8,6 +8,10 @@ public class Account {
 		this.balance = 0;
 	}
 	
+	public Account(int balance) {
+		this.balance = balance;
+	}
+	
 	public int getBalance() {
 		if (balance < 0)
 			balance = 0;
