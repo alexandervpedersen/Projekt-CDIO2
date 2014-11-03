@@ -1,11 +1,6 @@
 package Game;
 
 public class DiceBox {
-
-		Dice t1;
-		Dice t2;
-		int numberOfDice = 2;
-		Dice[] box  = new Dice[numberOfDice];
 		
 		//Dice t1;
 		//Dice t2;
