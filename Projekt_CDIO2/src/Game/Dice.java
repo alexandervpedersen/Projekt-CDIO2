@@ -3,7 +3,7 @@ package Game;
 public class Dice {
 
 		private int dice;
-		private int diceside;
+		private int diceside = 6;
 
 		public int getDice() {
 			return dice;
