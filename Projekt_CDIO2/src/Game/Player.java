@@ -27,7 +27,7 @@ public class Player {
 	}
 	
 	public void addBalance(int add) {
-		account.setBalance(add);
+		account.addBalance(add);
 	}
 	
 	public String toString() {
