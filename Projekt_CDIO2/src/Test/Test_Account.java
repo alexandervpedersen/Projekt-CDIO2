@@ -1,7 +1,7 @@
 package Test;
 import Game.Account;
 
-public class TestPenge {
+public class Test_Account {
 
 	public static void main(String[] args) {
 		//Preconditions
