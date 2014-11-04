@@ -41,7 +41,7 @@ public class DiceBox {
 		}
 		
 		public boolean CheckReroll() {
-			if (getSum() == 9)
+			if (getSum() == 10)
 				return true;
 			else
 				return false;
