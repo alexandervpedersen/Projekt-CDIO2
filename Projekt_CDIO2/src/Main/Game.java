@@ -163,7 +163,7 @@ public class Game {
 		boolean tur2 = false;
 		boolean playagain = false;
 		
-		// 
+		// Random player starts the game
 		int start = (int) ((Math.random() * 2) + 1);
 		if (start == 1) 
 			tur1 = true;

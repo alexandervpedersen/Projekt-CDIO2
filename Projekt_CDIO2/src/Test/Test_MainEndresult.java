@@ -100,6 +100,7 @@ public class Test_MainEndresult {
 			
 			Player player1 = new Player(GUI.getUserString(message_insertplayer1), account1);
 			Player player2 = new Player(GUI.getUserString(message_insertplayer2), account2);
+			
 			boolean run = true;
 			while (run == true) {
 			player1.setBalance(1000);
@@ -160,7 +161,7 @@ public class Test_MainEndresult {
 			boolean tur2 = false;
 			boolean playagain = false;
 			
-			// 
+			// Random player starts the game 
 			int start = (int) ((Math.random() * 2) + 1);
 			if (start == 1) 
 				tur1 = true;
