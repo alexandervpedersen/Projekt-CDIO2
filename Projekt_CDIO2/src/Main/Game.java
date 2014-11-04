@@ -258,11 +258,8 @@ public class Game {
 						winner = true;
 						win1 = true;
 				}
-				else {
-						tur1 = false;
-						tur2 = true;
+				else
 						winner = false;
-				}
 			}
 			if (tur2 = true) {
 				GUI.getUserButtonPressed(player2.getName() + ", " + message_everyturn, button_rolldice);
@@ -356,11 +353,8 @@ public class Game {
 						winner = true;
 						win2 = true;
 				}
-				else {
-						tur2 = false;
-						tur1 = true;
+				else
 						winner = false;
-				}
 			}
 		}
 		if (win1 == true) 
