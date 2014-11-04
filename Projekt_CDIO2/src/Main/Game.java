@@ -333,7 +333,7 @@ public class Game {
 					GUI.showMessage(board.getTilemessage(11));
 					break;
 				}
-				GUI.setBalance(player1.getName(), player1.getBalance());
+				GUI.setBalance(player2.getName(), player2.getBalance());
 				
 				if (dicebox.CheckReroll() == true) {
 					tur2 = true;
