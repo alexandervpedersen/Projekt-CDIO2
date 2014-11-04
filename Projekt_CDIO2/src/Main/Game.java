@@ -40,6 +40,7 @@ public class Game {
 		
 		String message_insertplayer1 = "Insert name of player 1";
 		String message_insertplayer2 = "Insert name of player 2";
+		String message_pretilereward = "Balance: ";
 		
 		String button_rolldice = "THROW";
 		String message_everyturn = "Press " + button_rolldice + " to roll the dice";
@@ -118,6 +119,19 @@ public class Game {
 		GUI.setTitleText(11, board.getTilename(9));
 		GUI.setTitleText(12, board.getTilename(10));
 		GUI.setTitleText(13, board.getTilename(11));
+		
+		GUI.setSubText(3, message_pretilereward + board.getTilereward(1));
+		GUI.setSubText(4, message_pretilereward + board.getTilereward(2));
+		GUI.setSubText(5, message_pretilereward + board.getTilereward(3));
+		GUI.setSubText(6, message_pretilereward + board.getTilereward(4));
+		GUI.setSubText(7, message_pretilereward + board.getTilereward(5));
+		GUI.setSubText(8, message_pretilereward + board.getTilereward(6));
+		GUI.setSubText(9, message_pretilereward + board.getTilereward(7));
+		GUI.setSubText(10, message_pretilereward + board.getTilereward(8));
+		GUI.setSubText(11, message_pretilereward + board.getTilereward(9));
+		GUI.setSubText(12, message_pretilereward + board.getTilereward(10));
+		GUI.setSubText(13, message_pretilereward + board.getTilereward(11));
+		
 		
 		GUI.addPlayer(player1.getName(), player1.getBalance());
 		GUI.addPlayer(player2.getName(), player2.getBalance());
