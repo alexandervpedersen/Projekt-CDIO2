@@ -41,18 +41,13 @@ public class DiceBox {
 		}
 		
 		public boolean CheckReroll() {
-			if (getSum() == 10)
+			if (box[0].getDice() + box[1].getDice() == 10)
 				return true;
 			else
 				return false;
 		}
-		
-//		public int Roll(){
-//			int sum = t1.rollDice()+t2.rollDice();
-//			return sum;
-//		}
-		
-//		public String toString() { //Skal opdateres til array kald
-//			return ("The dicebox has the values " + t1.rollDice() + " and " + t2.rollDice());
-//		}
+
+		public String toString() {
+			return ("The dicebox has the values " + box[0].rollDice() + " and " + box[1].rollDice());
+		}
 }
