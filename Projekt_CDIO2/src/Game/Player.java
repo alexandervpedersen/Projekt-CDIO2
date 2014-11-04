@@ -30,6 +30,11 @@ public class Player {
 		account.addBalance(add);
 	}
 	
+	public boolean CheckWin() {
+		return account.CheckWin();
+	}
+	
+	
 	public String toString() {
 		return ("The player " + name + "has the " + account.toString());
 	}
