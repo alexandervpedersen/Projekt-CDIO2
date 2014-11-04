@@ -11,6 +11,9 @@ import boundaryToMatador.GUI;
 public class Game {
 
 	public static void main(String[] args) {
+		boolean run = true;
+		while (run == true) {
+		
 		GUI.create("fieldsfx.txt");
 		
 		// Creation of all Strings
@@ -43,6 +46,9 @@ public class Game {
 		String message_pretilereward = "Balance: ";
 		String message_playerwin_part1 = "Congratulations: ";
 		String message_playerwin_part2 = " You have won the game";
+		String message_playagain = "Want to play again?";
+		String answer_yes = "YES";
+		String answer_no = "NO";
 		String button_rolldice = "THROW";
 		String message_everyturn = "Press " + button_rolldice + " to roll the dice";
 
@@ -133,6 +139,9 @@ public class Game {
 		GUI.setSubText(12, message_pretilereward + board.getTilereward(10));
 		GUI.setSubText(13, message_pretilereward + board.getTilereward(11));
 		
+		
+		GUI.removeAllCars(player1.getName());
+		GUI.removeAllCars(player2.getName());
 		GUI.addPlayer(player1.getName(), player1.getBalance(), 219, 68, 55);
 		GUI.addPlayer(player2.getName(), player1.getBalance(), 49, 112, 206);
 		GUI.setCar(1, player1.getName());
@@ -143,6 +152,7 @@ public class Game {
 		boolean win2 = false;
 		boolean tur1 = false;
 		boolean tur2 = false;
+		boolean playagain = false;
 		
 		// 
 		int start = (int) ((Math.random() * 2) + 1);
@@ -354,11 +364,12 @@ public class Game {
 		if (win2 == true) 
 			GUI.showMessage(message_playerwin_part1 + player2.getName() + message_playerwin_part2);
 		
-			
-		
-		
-		
-		
+		playagain = GUI.getUserLeftButtonPressed(message_playagain, answer_yes, answer_no);
+		if (playagain == true)
+			run = true;
+		if (playagain == false)
+			run = false;
+		}
+	GUI.close();
 	}
-
 }
