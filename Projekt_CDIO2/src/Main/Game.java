@@ -132,21 +132,21 @@ public class Game {
 		GUI.setSubText(12, message_pretilereward + board.getTilereward(10));
 		GUI.setSubText(13, message_pretilereward + board.getTilereward(11));
 		
-		GUI.addPlayer(player1.getName(), player1.getBalance());
-		GUI.addPlayer(player2.getName(), player2.getBalance());
+		GUI.addPlayer(player1.getName(), player1.getBalance(), 219, 68, 55);
+		GUI.addPlayer(player2.getName(), player1.getBalance(), 49, 112, 206);
 		
 		
-		boolean winner = false;
 		boolean tur1 = false;
 		boolean tur2 = false;
 		
-		// Checks for extra turn
+		// 
 		int start = (int) ((Math.random() * 2) + 1);
 		if (start == 1)
 			tur1 = true;
 		else
 			tur2 = true;
-	
+		
+		boolean winner = false;
 		while (winner != true) {
 			if (tur1 = true) {
 				GUI.getUserButtonPressed(message_everyturn, button_rolldice);
