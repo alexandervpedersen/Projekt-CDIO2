@@ -9,10 +9,7 @@ import boundaryToMatador.GUI;
 
 public class Game {
 
-	public static void main(String[] args) {
-		boolean run = true;
-		while (run == true) {
-		
+	public static void main(String[] args) {		
 		GUI.create("fieldsfx.txt");
 		
 		// Creation of all Strings
@@ -106,7 +103,15 @@ public class Game {
 		Player player1 = new Player(GUI.getUserString(message_insertplayer1), account1);
 		Player player2 = new Player(GUI.getUserString(message_insertplayer2), account2);
 		
+		boolean run = true;
+		while (run == true) {
+		player1.setBalance(1000);
+		player2.setBalance(1000);
+		
 		// Sets GUI
+		GUI.setBalance(player1.getName(), player1.getBalance());
+		GUI.setBalance(player2.getName(), player2.getBalance());
+		
 		GUI.setDescriptionText(3, board.getTilemessage(1));
 		GUI.setDescriptionText(4, board.getTilemessage(2));
 		GUI.setDescriptionText(5, board.getTilemessage(3));
@@ -166,7 +171,9 @@ public class Game {
 			tur2 = true;
 		
 		while (winner != true) {
-			if (tur1 = true) {
+			if (tur1 == true) {
+				GUI.removeAllCars(player1.getName());
+				GUI.setCar(1, player1.getName());
 				GUI.getUserButtonPressed(player1.getName() + ", " + message_everyturn, button_rolldice);
 				dicebox.rollDice();
 				GUI.setDice(dicebox.getDice(0), dicebox.getDice(1));
@@ -261,7 +268,9 @@ public class Game {
 				else
 						winner = false;
 			}
-			if (tur2 = true) {
+			if (tur2 == true) {
+				GUI.removeAllCars(player2.getName());
+				GUI.setCar(1, player2.getName());
 				GUI.getUserButtonPressed(player2.getName() + ", " + message_everyturn, button_rolldice);
 				dicebox.rollDice();
 				GUI.setDice(dicebox.getDice(0), dicebox.getDice(1));
@@ -367,6 +376,8 @@ public class Game {
 			run = true;
 		if (playagain == false)
 			run = false;
+		GUI.removeAllCars(player1.getName());
+		GUI.removeAllCars(player2.getName());
 		}
 	GUI.close();
 	}
