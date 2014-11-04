@@ -134,7 +134,8 @@ public class Game {
 		
 		GUI.addPlayer(player1.getName(), player1.getBalance(), 219, 68, 55);
 		GUI.addPlayer(player2.getName(), player1.getBalance(), 49, 112, 206);
-		
+		GUI.setCar(1, player1.getName());
+		GUI.setCar(1, player2.getName());
 		
 		boolean tur1 = false;
 		boolean tur2 = false;
@@ -148,6 +149,8 @@ public class Game {
 		
 		boolean winner = false;
 		while (winner != true) {
+			GUI.removeAllCars(player1.getName());
+			GUI.removeAllCars(player2.getName());
 			if (tur1 = true) {
 				GUI.getUserButtonPressed(message_everyturn, button_rolldice);
 				dicebox.rollDice();
@@ -157,57 +160,68 @@ public class Game {
 				switch (n) {
 				case 2: 
 					player1.addBalance(board.getTilereward(1));
-					GUI.setCar(3, board.getTilename(1));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(3, player1.getName());
 					GUI.showMessage(board.getTilemessage(1));
 					break;
 				case 3: 
 					player1.addBalance(board.getTilereward(2));
-					GUI.setCar(4, board.getTilename(2));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(4, player1.getName());
 					GUI.showMessage(board.getTilemessage(2));
 					break;
 				case 4: 
 					player1.addBalance(board.getTilereward(3));
-					GUI.setCar(5, board.getTilename(3));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(5, player1.getName());
 					GUI.showMessage(board.getTilemessage(3));
 					break;
 				case 5: 
 					player1.addBalance(board.getTilereward(4));
-					GUI.setCar(6, board.getTilename(4));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(6, player1.getName());
 					GUI.showMessage(board.getTilemessage(4));
 					break;
 				case 6: 
 					player1.addBalance(board.getTilereward(5));
-					GUI.setCar(7, board.getTilename(5));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(7, player1.getName());
 					GUI.showMessage(board.getTilemessage(5));
 					break;
 				case 7: 
 					player1.addBalance(board.getTilereward(6));
-					GUI.setCar(8, board.getTilename(6));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(8, player1.getName());
 					GUI.showMessage(board.getTilemessage(6));
 					break;
 				case 8: 
 					player1.addBalance(board.getTilereward(7));
-					GUI.setCar(9, board.getTilename(7));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(9, player1.getName());
 					GUI.showMessage(board.getTilemessage(7));
 					break;
 				case 9: 
 					player1.addBalance(board.getTilereward(8));
-					GUI.setCar(10, board.getTilename(8));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(10, player1.getName());
 					GUI.showMessage(board.getTilemessage(8));
 					break;
 				case 10: 
 					player1.addBalance(board.getTilereward(9));
-					GUI.setCar(11, board.getTilename(9));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(11, player1.getName());
 					GUI.showMessage(board.getTilemessage(9));
 					break;
 				case 11: 
 					player1.addBalance(board.getTilereward(10));
-					GUI.setCar(12, board.getTilename(10));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(12, player1.getName());
 					GUI.showMessage(board.getTilemessage(10));
 					break;
 				case 12: 
 					player1.addBalance(board.getTilereward(11));
-					GUI.setCar(13, board.getTilename(11));
+					GUI.removeCar(1, player1.getName());
+					GUI.setCar(13, player1.getName());
 					GUI.showMessage(board.getTilemessage(11));
 					break;
 				}
