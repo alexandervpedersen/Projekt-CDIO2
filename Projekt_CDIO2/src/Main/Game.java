@@ -49,8 +49,13 @@ public class Game {
 		String message_playagain = "Want to play again?";
 		String answer_yes = "YES";
 		String answer_no = "NO";
+		String message_extraturn_part1 = "Congratulations ";
+		String message_extraturn_part2 = " you get an extra turn";
 		String button_rolldice = "THROW";
-		String message_everyturn = "Press " + button_rolldice + " to roll the dice";
+		String message_everyturn_part1 = "Press ";
+		String message_everyturn_part2 = " to roll the dice";
+		
+		String message_everyturn = message_everyturn_part1 + button_rolldice + message_everyturn_part2;
 
 		
 		String namearray[] = new String[11];
@@ -163,7 +168,7 @@ public class Game {
 		
 		while (winner != true) {
 			if (tur1 = true) {
-				GUI.getUserButtonPressed(message_everyturn, button_rolldice);
+				GUI.getUserButtonPressed(player1.getName() + ", " + message_everyturn, button_rolldice);
 				dicebox.rollDice();
 				GUI.setDice(dicebox.getDice(0), dicebox.getDice(1));
 				
@@ -241,6 +246,7 @@ public class Game {
 				if (dicebox.CheckReroll() == true) {
 					tur1 = true;
 					tur2 = false;
+					GUI.showMessage(message_extraturn_part1 + player1.getName() + message_extraturn_part2);
 				}
 				else {
 					tur1 = false;
@@ -260,7 +266,7 @@ public class Game {
 				}
 			}
 			if (tur2 = true) {
-				GUI.getUserButtonPressed(message_everyturn, button_rolldice);
+				GUI.getUserButtonPressed(player2.getName() + ", " + message_everyturn, button_rolldice);
 				dicebox.rollDice();
 				GUI.setDice(dicebox.getDice(0), dicebox.getDice(1));
 				
@@ -338,6 +344,7 @@ public class Game {
 				if (dicebox.CheckReroll() == true) {
 					tur2 = true;
 					tur1 = false;
+					GUI.showMessage(message_extraturn_part1 + player2.getName() + message_extraturn_part2);
 				}
 				else {
 					tur2 = false;
