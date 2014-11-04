@@ -34,7 +34,6 @@ public class Player {
 		return account.CheckWin();
 	}
 	
-	
 	public String toString() {
 		return ("The player " + name + "has the " + account.toString());
 	}

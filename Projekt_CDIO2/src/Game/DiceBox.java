@@ -41,13 +41,13 @@ public class DiceBox {
 		}
 		
 		public boolean CheckReroll() {
-			if (box[0].getDice() + box[1].getDice() == 10)
+			if (getSum() == 10)
 				return true;
 			else
 				return false;
 		}
 
 		public String toString() {
-			return ("The dicebox has the values " + box[0].rollDice() + " and " + box[1].rollDice());
+			return ("The dicebox has the values " + box[0].getDice() + " and " + box[1].getDice());
 		}
 }
