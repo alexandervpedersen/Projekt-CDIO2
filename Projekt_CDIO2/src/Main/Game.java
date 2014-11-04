@@ -2,7 +2,6 @@ package Main;
 
 import Game.Board;
 import Game.Tile;
-import Game.Dice;
 import Game.DiceBox;
 import Game.Player;
 import Game.Account;
@@ -161,7 +160,7 @@ public class Game {
 		
 		// 
 		int start = (int) ((Math.random() * 2) + 1);
-		if (start == 1)
+		if (start == 1) 
 			tur1 = true;
 		else
 			tur2 = true;
@@ -351,7 +350,7 @@ public class Game {
 					tur1 = true;
 				}
 				
-				if (player1.CheckWin() == true) {
+				if (player2.CheckWin() == true) {
 						tur2 = false;
 						tur1 = false;
 						winner = true;
